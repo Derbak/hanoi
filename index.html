@@ -1,0 +1,98 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="styles/hanoi.css">
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="scripts/hanoi.js"></script>
+	<title>Ханойская башня</title>
+</head>
+<body>
+	<noscript>
+		<div id="noscript">
+			<h1>Нужно включить JavaScript!</h1>
+		</div>
+	</noscript>
+	<div id="main">
+		<div class="logo">
+			<picture>
+				<source srcset="images/hanoi.svg">
+				<img src="images/hanoi.png" alt="Hanoi Tower Logo">
+			</picture>
+		</div>
+
+		<h1>Ханойская башня</h1>
+
+		<ul>
+			<li class="btn_easy">
+				<p>Легко <small><i>(5 дисков)</i></small></p>
+			</li>
+			<li class="btn_normal">
+				<p>Нормально <small><i>(8 дисков)</i></small></p>
+			</li>
+			<li class="btn_hard">
+				<p>Сложно <small><i>(10 дисков)</i></small></p>
+			</li>
+		</ul>
+		<p class="description">
+			Одна из популярных головоломок XIX века. Даны три стержня, на один из которых нанизаны восемь колец, причём кольца отличаются размером и лежат меньшее на большем. Задача состоит в том, чтобы перенести пирамиду из восьми колец за наименьшее число ходов на другой стержень. За один раз разрешается переносить только одно кольцо, причём нельзя класть большее кольцо на меньшее.
+		</p>
+	</div>
+
+
+
+	<div id="hanoi">
+		<div class="stat">
+			<p>Ходов: <span class="moves">0</span></p>
+			<p>Время: <span class="timer">00:00:00</span></p>
+		</div>
+		<div class="field">
+			<div class="tower">
+				<div class="rod">
+				</div>
+			</div>
+			<div class="tower">
+				<div class="rod">
+				</div>
+			</div>
+			<div class="tower">
+				<div class="rod">
+				</div>
+			</div>
+			<div class="alert start">
+				<h1>Новая игра</h1>
+				<p>Нажмите "Старт" чтобы запустить таймер!</p>
+			</div>
+			<div class="alert pause">
+				<h1>Пауза</h1>
+				<p>Таймер приостановлен!</p>
+			</div>
+			<div class="alert win">
+				<h1>Победа</h1>
+				<p>Вы справились с задачей за <span class="win_moves">0</span> ходов!</p>
+				<p>Потрачено времени: <span class="win_time">0</span></p>
+			</div>
+		</div>
+		<div class="control">
+		<ul>
+			<li class="btn_start">
+				<p>Старт</p>
+			</li>
+			<li class="btn_pause">
+				<p>Пауза</p>
+			</li>
+			<li class="btn_continue">
+				<p>Продолжить</p>
+			</li>
+			<li class="btn_restart">
+				<p>Заново</p>
+			</li>
+			<li class="btn_exit">
+				<p>Выход</p>
+			</li>
+		</ul>
+		</div>
+	</div>
+</body>
+</html>
