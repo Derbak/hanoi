@@ -1,3 +1,5 @@
+#Tower of Hanoi
+
 Популярная головоломка / Popular puzzle
 
 Учебный скрипт / Training script
